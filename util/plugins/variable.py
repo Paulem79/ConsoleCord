@@ -3,7 +3,7 @@ from colorama import Fore
 name = "ConsoleCord"
 author = "PauLem79"
 releaseurl = "https://github.com/Paulem79/ConsoleCord"
-THIS_VERSION = "0.1.20"
+THIS_VERSION = "0.1.21"
 
 y = Fore.YELLOW
 b = Fore.LIGHTBLUE_EX

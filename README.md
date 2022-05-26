@@ -57,7 +57,7 @@ $ python3 atio.py
 ## Additional Informations
 General Informations:
 - Find your output files in the  [output](/output) folder.
-- If you find any malfunction, contact me on Discord: <\/\PauLem79\>#1138.
+- If you find any malfunction, contact me on Discord: <\/PauLem79\>#1138.
 
 ## Errors/Fixes
 

@@ -2,7 +2,7 @@ import requests
 import os
 from colorama import Fore
 from util.plugins.commun import * 
-from atio import main
+from cc import main
 
 setTitle("Account Disabler")
 clear()

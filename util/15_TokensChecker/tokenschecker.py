@@ -1,7 +1,7 @@
 import requests
 from colorama import Fore
 from util.plugins.commun import * 
-from atio import main
+from cc import main
 
 clear()
 tokenscheckertitle()

@@ -4,7 +4,7 @@ import os
 from datetime import datetime
 from colorama import Fore
 from util.plugins.commun import * 
-from atio import main
+from cc import main
 
 def tokeninfo():
     setTitle("Token Information")

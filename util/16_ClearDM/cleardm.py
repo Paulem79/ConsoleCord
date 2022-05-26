@@ -2,7 +2,7 @@ import os, os.path, discord
 from discord.ext import commands
 from colorama import Fore
 from util.plugins.commun import * 
-from atio import main
+from cc import main
 
 setTitle("Clear DM")
 clear()

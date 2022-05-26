@@ -4,7 +4,7 @@ import requests
 from itertools import cycle
 from colorama import Fore
 from util.plugins.commun import * 
-from atio import main
+from cc import main
 
 def cyclecolortheme():
     setTitle("Color Theme Changer")

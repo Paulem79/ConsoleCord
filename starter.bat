@@ -1,2 +1,1 @@
-echo Please wait until the program launch...
-python atio.py
+python cc.py

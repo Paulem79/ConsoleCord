@@ -16,9 +16,8 @@ def setTitle(_str):
 def Spinner():
 	l = ['|', '/', '-', '\\']
 	for i in l+l+l:
-		sys.stdout.write(f"""\r{y}[{b}#{y}]{w} Loading... - {name} {i}""")
+		sys.stdout.write(f"""\r{y}[{b}#{y}]{w} {g}Loading...{w} - {name} {i}""")
 		sys.stdout.flush()
-		time.sleep(0.2)
 
 def clear():
     system = os.name
@@ -34,6 +33,11 @@ def transition():
     clear()
     Spinner()
     clear()
+
+def demon():
+    inf = 0
+    while(inf == 0):
+        print(f"{r}666{w}")
 
 def getTempDir():
     system = os.name

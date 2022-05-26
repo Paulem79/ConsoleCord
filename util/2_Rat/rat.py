@@ -1,7 +1,7 @@
 from colorama import Fore
 import time, sys, os
 from util.plugins.commun import * 
-from atio import main
+from cc import main
 
 def discordrat():
     setTitle("Rat Tool")

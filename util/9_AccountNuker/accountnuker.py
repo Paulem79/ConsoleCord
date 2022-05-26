@@ -1,7 +1,7 @@
 import os, sys, time, requests, os.path, threading, random
 from colorama import Fore
 from util.plugins.commun import * 
-from atio import main
+from cc import main
 from util.settingscycler.settingscycler import cyclecolortheme
 
 

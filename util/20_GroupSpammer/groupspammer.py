@@ -4,7 +4,7 @@ from time import sleep
 from colorama import Fore
 
 from util.plugins.commun import * #setTitle, getheaders, proxy
-from atio import main
+from cc import main
 
 def selector(token, users):
     clear()

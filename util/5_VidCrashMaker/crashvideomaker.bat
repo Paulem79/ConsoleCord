@@ -3,7 +3,7 @@ setlocal enabledelayedexpansion
 pushd %~dp0
 chcp 65001 >nul
 
-title Video Crash Maker - Made by Astraa
+title Video Crash Maker
 set Version=1.0
 
 set "AllowedExtentions=gif webm mp4 mkv png jpg"

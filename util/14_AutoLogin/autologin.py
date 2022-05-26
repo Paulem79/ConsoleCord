@@ -2,6 +2,7 @@ import os, time, os.path
 from colorama import Fore
 from selenium import webdriver
 from util.plugins.commun import * 
+from atio import main
 
 def autologin() :
     setTitle("Auto Login")

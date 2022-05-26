@@ -155,7 +155,9 @@ def discserver():
     print(f"""{y}------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n""")
 
 def astraahometitle():
-    print(f"""\n\n{name} TOOL\n""".replace('█', f'{b}█{y}'))
+    size = os.get_terminal_size()
+    namemenu = f"{b}{name} TOOL{w}".center(size.columns)
+    print(f"""\n\n{namemenu}\n""")
     discserver()
 
 def selfbottitle():

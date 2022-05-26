@@ -23,14 +23,9 @@ def search_for_updates():
 
     if THIS_VERSION not in result_string:
         setTitle(f"{name} New Update Found!")
-        print(f'''\n\n                    ███╗   ██╗███████╗██╗    ██╗    ██╗   ██╗██████╗ ██████╗  █████╗ ████████╗███████╗██╗
-                    ████╗  ██║██╔════╝██║    ██║    ██║   ██║██╔══██╗██╔══██╗██╔══██╗╚══██╔══╝██╔════╝██║
-                    ██╔██╗ ██║█████╗  ██║ █╗ ██║    ██║   ██║██████╔╝██║  ██║███████║   ██║   █████╗  ██║
-                    ██║╚██╗██║██╔══╝  ██║███╗██║    ██║   ██║██╔═══╝ ██║  ██║██╔══██║   ██║   ██╔══╝  ╚═╝
-                    ██║ ╚████║███████╗╚███╔███╔╝    ╚██████╔╝██║     ██████╔╝██║  ██║   ██║   ███████╗██╗
-                    ╚═╝  ╚═══╝╚══════╝ ╚══╝╚══╝      ╚═════╝ ╚═╝     ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝\n'''.replace('█', f'{b}█{y}'))
+        print(f'''\n\n                    NEW UPDATE !\n'''.replace('█', f'{b}█{y}'))
         discserver()
-        print(f'''{y}[{Fore.RED}!{y}]{w}Looks like this {name} {THIS_VERSION} is outdated...''')
+        print(f'''{y}[{r}!{y}] {w}Looks like this {name} {THIS_VERSION} is outdated...''')
         soup = BeautifulSoup(requests.get(f"{releaseurl}/releases").text, 'html.parser')
         for link in soup.find_all('a'):
             if "releases/download" in str(link):

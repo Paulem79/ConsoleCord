@@ -1,6 +1,7 @@
 import requests, threading
 from colorama import Fore
-from util.plugins.commun import setTitle, proxy, getheaders
+from util.plugins.commun import * #setTitle, proxy, getheaders
+from atio import main
 
 setTitle("Mass DM")
 clear()

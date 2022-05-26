@@ -2,6 +2,7 @@ import os
 import requests
 from colorama import Fore
 from util.plugins.commun import * 
+from atio import main
 
 setTitle("WebHook Remover")
 clear()

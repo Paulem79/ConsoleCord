@@ -1,6 +1,7 @@
 import os, requests, os.path
 from colorama import Fore
 from util.plugins.commun import * 
+from atio import main
 
 setTitle("Statue Changer")
 clear()
